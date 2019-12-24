@@ -1,7 +1,6 @@
 {
-  "name": "bs-flow-parser",
-  "version": "0.91.0-1",
-  "author": "Phil Pluckthun <phil@kitten.sh>",
+  "name": "@gabnor/bs-flow-parser",
+  "version": "0.91.0",
   "main": "./dist/flow_parser.bundle.js",
   "files": [
     "dist",
@@ -19,9 +18,6 @@
     "bundle": "webpack-cli",
     "prepublishOnly": "run-s clean build bundle"
   },
-  "repository": "https://github.com/kitten/bs-flow-parser",
-  "homepage": "https://github.com/kitten/bs-flow-parser",
-  "bugs": "https://github.com/kitten/bs-flow-parser/issues",
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^7.0.1",
