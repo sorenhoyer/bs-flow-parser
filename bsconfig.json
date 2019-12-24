@@ -28,14 +28,8 @@
       ]
     }
   ],
-  "ppx-flags": [
-    "ppx-sedlex/ppx.js"
-  ],
-  "bs-dependencies" : [
-    "@elliottcable/bs-gen",
-    "@elliottcable/bs-uchar",
-    "bs-sedlex"
-  ],
+  "ppx-flags": ["ppx-sedlex/ppx.js"],
+  "bs-dependencies": ["bs-sedlex"],
   "bs-dev-dependencies": [],
   "namespace": true
 }

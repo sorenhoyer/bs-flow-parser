@@ -2,20 +2,6 @@
 # yarn lockfile v1
 
 
-"@elliottcable/bs-gen@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@elliottcable/bs-gen/-/bs-gen-0.5.1.tgz#0cd7f31013b1d424e201a6fe6118615c15964102"
-  integrity sha512-nTxwpcBbCENxy9TIYFr553mp2Mts7I5OAan4ke7uiphiQKo0EqOpCgPG+kSYlp8LdPSz4h/IYJJoVC7ldIr/Lg==
-  dependencies:
-    bs-platform "^4.0.2"
-
-"@elliottcable/bs-uchar@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@elliottcable/bs-uchar/-/bs-uchar-0.0.2.tgz#455e23b226c38349a54e18fefa3284baf22a5558"
-  integrity sha512-DG8C2IhTZB2a+A0/AE0jrBZyzkj9VW/7Zc+E5XOALfmgBh2Xy92H8xyT6okh0QK4EzGZiT2/heHYF0AAriOrNA==
-  dependencies:
-    bs-platform "^4.0.2"
-
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.11.tgz#b988582cafbb2b095e8b556526f30c90d057cace"
@@ -236,6 +222,11 @@ aproba@^1.0.3, aproba@^1.1.1:
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
   integrity sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
 
+arch@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/arch/-/arch-2.1.1.tgz#8f5c2731aa35a30929221bb0640eed65175ec84e"
+  integrity sha512-BLM56aPo9vLLFVa8+/+pJLnrZ7QGGTVHWsCwieAWT9o9K8UeGaQbzZbGoabWLOo2ksBCztoXdqBZBplqLDDCSg==
+
 are-we-there-yet@~1.1.2:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/are-we-there-yet/-/are-we-there-yet-1.1.5.tgz#4b35c2944f062a8bfcda66410760350fe9ddfc21"
@@ -441,19 +432,28 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-bs-platform@^4.0.18, bs-platform@^4.0.2, bs-platform@^4.0.3:
-  version "4.0.18"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-4.0.18.tgz#d17b8693ba1f714d9b27e0ddb365f2069ba4b8a0"
-  integrity sha512-BwzW0iYHvREqUZIgQxJmdJrxexppLvJxYQ4LLexbhCp7uZU5DIZ5ub4ZHpkCkc8fn8bsXWc+Rrejb3csi+BoAQ==
+bs-gen@^0.5.2:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/bs-gen/-/bs-gen-0.5.3.tgz#ef80cd6175d464531b0538315ca3ecb04d5a1345"
+  integrity sha512-2zVdOz8i1JxorN7gTf163QXgmidoqQJFgfZ4owLVQmyyxdXp4Bo3W9Gs6IIYX22F1vgxoYwI1AWijjQcKrS9Yw==
 
-bs-sedlex@^1.99.4-pre.8:
-  version "1.99.4-pre.8"
-  resolved "https://registry.yarnpkg.com/bs-sedlex/-/bs-sedlex-1.99.4-pre.8.tgz#a41889f02eeedef59e30f26c21936f7ffc2c6ce0"
-  integrity sha512-wg9mqHC9RKRsO3w/SQU13PwjmdHrjkCFswfgfkrBSqlNZ//YXIf77jdD+SNTv6yAad5ygvMynMxN5TQRYrAGEA==
+bs-platform@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-7.0.1.tgz#1d7b0ef6088b998dceee5db74a7cd8f01c20a3bd"
+  integrity sha512-UjStdtHhbtC/l6vKJ1XRDqrPk7rFf5PLYHtRX3akDXEYVnTbN36z0g4DEr5mU8S0N945e33HYts9x+i7hKKpZQ==
+
+bs-sedlex@^20.0.0:
+  version "20.0.0"
+  resolved "https://registry.yarnpkg.com/bs-sedlex/-/bs-sedlex-20.0.0.tgz#96fe277a3e278facdb633ea9a41d7d67bb839784"
+  integrity sha512-TQODdIWL8z2wIhGVmEZ3RLUFeeeOZHtWlM7AxjL0l1IwPyxe5rhoB2x5iw5yNu5yMG5ofSnoDJLpJZ6mu5eNGA==
   dependencies:
-    "@elliottcable/bs-gen" "^0.5.1"
-    "@elliottcable/bs-uchar" "^0.0.2"
-    bs-platform "^4.0.3"
+    bs-gen "^0.5.2"
+    bs-uchar "^2.0.0"
+
+bs-uchar@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/bs-uchar/-/bs-uchar-2.1.0.tgz#dc8416273be9573c90996c89f5a2d391157e27bc"
+  integrity sha512-sA7zL8eSQfpcOV5DehdiQZ8roQ8Ae/MNgyplORqzxYV22ElIcaP76Z+iJmhk1Xq9xgNjR4oAhiWIAKBEKiIl7Q==
 
 buffer-from@^1.0.0:
   version "1.1.1"
@@ -2227,10 +2227,12 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
-ppx-sedlex@^1.99.4-pre.8:
-  version "1.99.4-pre.8"
-  resolved "https://registry.yarnpkg.com/ppx-sedlex/-/ppx-sedlex-1.99.4-pre.8.tgz#2fe29e65431c439061663e9d8286de0e2c1df321"
-  integrity sha512-vRBW1Dsq4LMGH9Qx030iAx6NAJS43bscYfdXdN7BtO2X5J9wD8SrAGWkNSv4/G7uL6mnOoUoshKYJKu2ehgddQ==
+ppx-sedlex@^20.0.0:
+  version "20.0.0"
+  resolved "https://registry.yarnpkg.com/ppx-sedlex/-/ppx-sedlex-20.0.0.tgz#f376e386942e0afa857d479fd92c65c9dce0b053"
+  integrity sha512-yydAcl6Rn1nfkQJfa5rqStRj6hx6x5MQqkdIPmqBnEnbl61WEASUBeiWu2PbjOC3DTgW7GduFDNRTYlUdGvxng==
+  dependencies:
+    arch "^2.1.1"
 
 process-nextick-args@~2.0.0:
   version "2.0.0"
